@@ -16,11 +16,16 @@ protocol delete {
     func deletepost(index : Int)
 }
 
+protocol image {
+    func notify(index : Int)
+}
+
 class CustomTableViewCell: UITableViewCell {
 
     var index = 0
     public var updatedelegate : update?
     public var deletedelegate : delete?
+    public var imagedelegate : image?
     
     
     @IBOutlet weak var likeimage: UIButton!
@@ -61,4 +66,9 @@ class CustomTableViewCell: UITableViewCell {
         
     }
     
+    @IBAction func tochedOnImage(_ sender: Any) {
+        
+        imagedelegate?.notify(index: index)
+        
+    }
 }

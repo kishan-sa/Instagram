@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A8C3FDCAF5465A9C6B433569 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0028BB6B659AC228A2E6E2 /* Pods_Instagram.framework */; };
+		C8F7449922CF46A6008D5529 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7449822CF46A6008D5529 /* ImageViewController.swift */; };
 		C8F7DCC422C9CC2A006F0623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7DCC322C9CC2A006F0623 /* AppDelegate.swift */; };
 		C8F7DCC622C9CC2A006F0623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7DCC522C9CC2A006F0623 /* ViewController.swift */; };
 		C8F7DCC922C9CC2A006F0623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F7DCC722C9CC2A006F0623 /* Main.storyboard */; };
@@ -27,6 +28,11 @@
 		529DC8FBC31409258E2AB4B1 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		5C0028BB6B659AC228A2E6E2 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F22D8041B24882140F667ED /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
+		C8F7449822CF46A6008D5529 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		C8F7449A22CF78DD008D5529 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		C8F7449B22CF78DE008D5529 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C8F7449C22CF78EE008D5529 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		C8F7449D22CF78EE008D5529 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		C8F7DCC022C9CC2A006F0623 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F7DCC322C9CC2A006F0623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8F7DCC522C9CC2A006F0623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,13 +91,14 @@
 		C8F7DCC222C9CC2A006F0623 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				C8F7449822CF46A6008D5529 /* ImageViewController.swift */,
 				C8FD9E3A22CDD99600613C1C /* TabBarViewController.swift */,
 				C8F7DCCA22C9CC2B006F0623 /* Assets.xcassets */,
 				C8F7DCC722C9CC2A006F0623 /* Main.storyboard */,
 				C8FD9E3C22CDECC500613C1C /* RatingControl.swift */,
 				C8F8EA6222CCD684004BFD6E /* SidemenuViewController.swift */,
-				C8F8E9F722CA16CF00612328 /* CustomTableViewCell.swift */,
 				C8F8E9F522CA0B5100612328 /* AddDataController.swift */,
+				C8F8E9F722CA16CF00612328 /* CustomTableViewCell.swift */,
 				C8F8E9F322CA0AAB00612328 /* HomeScreenController.swift */,
 				C8F7DCC522C9CC2A006F0623 /* ViewController.swift */,
 				C8F7DCC322C9CC2A006F0623 /* AppDelegate.swift */,
@@ -280,6 +287,7 @@
 			files = (
 				C8FD9E3B22CDD99600613C1C /* TabBarViewController.swift in Sources */,
 				C8F7DCC622C9CC2A006F0623 /* ViewController.swift in Sources */,
+				C8F7449922CF46A6008D5529 /* ImageViewController.swift in Sources */,
 				C8F8E9F822CA16CF00612328 /* CustomTableViewCell.swift in Sources */,
 				C8F8E9F622CA0B5100612328 /* AddDataController.swift in Sources */,
 				C8FD9E3D22CDECC500613C1C /* RatingControl.swift in Sources */,
@@ -297,6 +305,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				C8F7DCC822C9CC2A006F0623 /* Base */,
+				C8F7449A22CF78DD008D5529 /* de */,
+				C8F7449C22CF78EE008D5529 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -305,6 +315,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				C8F7DCCD22C9CC2B006F0623 /* Base */,
+				C8F7449B22CF78DE008D5529 /* de */,
+				C8F7449D22CF78EE008D5529 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -377,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

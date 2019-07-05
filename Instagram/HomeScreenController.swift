@@ -11,8 +11,11 @@ import FirebaseCore
 import FirebaseFirestore
 import FirebaseStorage
 import SideMenu
+import SVProgressHUD
 
-class HomeScreenController: UIViewController , UITableViewDataSource , UITableViewDelegate ,update , delete{
+class HomeScreenController: UIViewController , UITableViewDataSource , UITableViewDelegate ,update , delete , image{
+    
+    
     
 
     @IBOutlet weak var logoimage: UIImageView!
@@ -21,7 +24,7 @@ class HomeScreenController: UIViewController , UITableViewDataSource , UITableVi
     var imagesid : [String] = []
     var db : Firestore!
     var index = 0
-    
+    var uiimages : UIImage?
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var tableview: UITableView!
     
@@ -49,6 +52,9 @@ class HomeScreenController: UIViewController , UITableViewDataSource , UITableVi
         view4.layer.cornerRadius = 30
         tableview.delegate = self
         tableview.dataSource = self
+        postss = []
+        read()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,13 +62,18 @@ class HomeScreenController: UIViewController , UITableViewDataSource , UITableVi
         //tableview.reloadData()
         postss = []
         read()
-        postss = []
+        
 //        tableview.reloadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+      
     }
     
     
     func  read() {
         
+        SVProgressHUD.show()
         db = Firestore.firestore()
         postss = []
         
@@ -74,6 +85,7 @@ class HomeScreenController: UIViewController , UITableViewDataSource , UITableVi
                     
                     let newpost = Post()
                     print("\(document.documentID) => \(document.data())")
+                    self.posts.append(document.documentID)
                     newpost.post = "\(document.data()["postdata"] as! String)"
                     newpost.imagename = "\(document.documentID)"
                     
@@ -94,14 +106,13 @@ class HomeScreenController: UIViewController , UITableViewDataSource , UITableVi
                             }
                         }
                     }
-                    //self.postss.append(newpost)
-                    
                 }
-                //self.tableview.reloadData()
             }
+            SVProgressHUD.dismiss()
         }
-     postss = []
     }
+    
+    
     
     func updatepost(newpost: String, index: Int) {
         
@@ -168,10 +179,21 @@ class HomeScreenController: UIViewController , UITableViewDataSource , UITableVi
         
     }
     
+    func notify(index: Int) {
+        
+        uiimages = postss[index].image!
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "image") as! ImageViewController
+        nextViewController.image = uiimages!
+        navigationController?.pushViewController(nextViewController, animated: true)
+        
+    }
+    
 
     //MARK: - table methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return postss.count
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -184,6 +206,7 @@ class HomeScreenController: UIViewController , UITableViewDataSource , UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "reusetablecell", for: indexPath) as! CustomTableViewCell
         cell.updatedelegate = self
         cell.deletedelegate = self
+        cell.imagedelegate = self
         let post = postss[indexPath.row]
         cell.textview.text = post.post
         cell.index = indexPath.row
