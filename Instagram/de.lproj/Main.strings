@@ -1,0 +1,69 @@
+
+/* Class = "UINavigationItem"; title = "Image"; ObjectID = "0zr-3g-n0C"; */
+"0zr-3g-n0C.title" = "Bild";
+
+/* Class = "UILabel"; text = "image 4"; ObjectID = "13i-lE-akc"; */
+"13i-lE-akc.text" = "Bild 4";
+
+/* Class = "UILabel"; text = "Let the Journey Begin"; ObjectID = "4p4-Cw-dvJ"; */
+"4p4-Cw-dvJ.text" = "Lasst die Reise beginnen";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "53v-M2-icp"; */
+"53v-M2-icp.title" = "Zuhause";
+
+/* Class = "UIBarButtonItem"; title = "Share"; ObjectID = "71R-c9-LOj"; */
+"71R-c9-LOj.title" = "Aktie";
+
+/* Class = "UIButton"; normalTitle = "add image/video"; ObjectID = "Aoh-Ri-Tlh"; */
+"Aoh-Ri-Tlh.normalTitle" = "Bild / Video hinzufügen";
+
+/* Class = "UITabBarItem"; title = "Add"; ObjectID = "DzY-vx-RIf"; */
+"DzY-vx-RIf.title" = "hinzufügen";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "EMC-6b-Obl"; */
+"EMC-6b-Obl.normalTitle" = "Ausloggen";
+
+/* Class = "UIButton"; normalTitle = "Share"; ObjectID = "GKJ-pz-Ki0"; */
+"GKJ-pz-Ki0.normalTitle" = "Aktie";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "GMk-m8-2f7"; */
+"GMk-m8-2f7.title" = "Zurück";
+
+/* Class = "UILabel"; text = "image 1"; ObjectID = "K1N-UI-vxk"; */
+"K1N-UI-vxk.text" = "Bild 1";
+
+/* Class = "UILabel"; text = "Stories"; ObjectID = "KfQ-Pb-GZE"; */
+"KfQ-Pb-GZE.text" = "Geschichten";
+
+/* Class = "UIButton"; normalTitle = "Connect With Email"; ObjectID = "R1w-qY-sjg"; */
+"R1w-qY-sjg.normalTitle" = "Mit E-Mail verbinden";
+
+/* Class = "UIViewController"; title = "image"; ObjectID = "SuF-tj-dm8"; */
+"SuF-tj-dm8.title" = "Bild";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TXv-J7-5bj"; */
+"TXv-J7-5bj.text" = "Etikette";
+
+/* Class = "UILabel"; text = "image 3"; ObjectID = "V9j-Sf-zYz"; */
+"V9j-Sf-zYz.text" = "Bild3";
+
+/* Class = "UIButton"; normalTitle = "Home"; ObjectID = "bAQ-7L-JZP"; */
+"bAQ-7L-JZP.normalTitle" = "Zuhause";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "cp1-ET-5NA"; */
+"cp1-ET-5NA.text" = "Name";
+
+/* Class = "UITextView"; text = "post data"; ObjectID = "lSf-zz-HyX"; */
+"lSf-zz-HyX.text" = "Post-Daten";
+
+/* Class = "UILabel"; text = "City Name"; ObjectID = "nyd-RG-19P"; */
+"nyd-RG-19P.text" = "Stadtname";
+
+/* Class = "UINavigationItem"; title = "Create post"; ObjectID = "rdT-Kl-WIS"; */
+"rdT-Kl-WIS.title" = "Beitrag erstellen";
+
+/* Class = "UILabel"; text = "Watch All"; ObjectID = "xJB-zB-aRa"; */
+"xJB-zB-aRa.text" = "Alle ansehen";
+
+/* Class = "UILabel"; text = "image 2"; ObjectID = "yqQ-G6-f9K"; */
+"yqQ-G6-f9K.text" = "Bild 2";
